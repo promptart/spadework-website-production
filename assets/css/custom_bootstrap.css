@@ -10811,9 +10811,9 @@ body {
   /* fallback for old browsers */
   background: #feada6;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(0deg, rgba(254, 173, 166, 0.4) 70%, rgba(245, 239, 239, 0.4) 93%, rgba(254, 173, 166, 0.4) 120%);
+  background: -webkit-linear-gradient(0deg, rgba(254, 173, 166, 0.4) 50%, rgba(255, 255, 255, 0.4) 83%, rgba(255, 255, 255, 0.4) 120%);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(0deg, rgba(254, 173, 166, 0.4) 70%, rgba(245, 239, 239, 0.4) 93%, rgba(254, 173, 166, 0.4) 120%);
+  background: linear-gradient(0deg, rgba(254, 173, 166, 0.4) 30%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 120%);
 }
 
 @media (min-width: 1024px) {
@@ -10821,9 +10821,9 @@ body {
     /* fallback for old browsers */
     background: #feada6;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(0deg, rgba(254, 173, 166, 0.4) 0%, rgba(245, 239, 239, 0.4) 90%, rgba(254, 173, 166, 0.4) 130%);
+    background: -webkit-linear-gradient(0deg, rgba(254, 173, 166, 0.4) 0%, rgba(255, 255, 255, 0.4) 98%, rgba(255, 255, 255, 0.4) 130%);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(0deg, rgba(254, 173, 166, 0.4) 0%, rgba(245, 239, 239, 0.4) 90%, rgba(254, 173, 166, 0.4) 130%);
+    background: linear-gradient(0deg, rgba(254, 173, 166, 0.4) 0%, rgba(255, 255, 255, 0.4) 98%, rgba(255, 255, 255, 0.4) 130%);
   }
 }
 .bg-fancyblue {
