@@ -1,3 +1,3 @@
-Spadework Website Repository
+Deprecated
 
-Available at https://spadework.ai
+go to https://github.com/promptart/spadework.ai instead
