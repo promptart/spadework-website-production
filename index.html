@@ -30,313 +30,110 @@
     <meta name="twitter:image" content="https://i.imgur.com/UEyOyEE.jpg">
 </head>
 
-<body class="coolbackground" >
+<body>
 
-    <section style="display: flex; flex-direction: column; align-items: center; width: 100%; overflow: hidden;">
+    <div class="topbar" style="position: fixed; top: 0px; left: 0px; width: calc(100% - 40px); height: 32px; padding: 20px;
+                        display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
 
-        <img src="assets/img/spade-fav.png" style="position: fixed; top: 20px; left: 40px; width: 40px;">
-        <!-- <div
-            style="height: 56px; background: #C2EAE1; display: flex; flex-direction: column; align-items: center; width: 100%;">
-        </div> -->
-        <div style="width: 100%; height: 690px ; display: flex; flex-direction: column; justify-content: center; align-items: center; background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgba(239,242,242,0) 50%);">
-            <div style="color: black; text-align: center; height: 100%; padding-top: 150px;">
-                <!-- <div style="font-size: 46px; font-weight: 600; color: #363635">Automatiseer repetitieve taken</div> -->
-                <div style="font-size: 60px; font-weight: 600; color: black;">Maak CVs met een klik</div>
-
-                <div style="font-size: 24px; font-weight: 500; margin-top: 20px"> <span style="font-weight: 600">Spadework</span> levert de nieuwste, beste AI voor Recruiters</div>
-                
-                <div style="font-size: 20px; margin-top: 12px; color: #444">Op <u style="cursor: pointer">onze website</u> kunt u verschillende tools <br /> eenvoudig gebruiken bovenop uw bestaande systeem.</div>
-                
-                <!-- Knoppen -->
-                <div style="margin-top: 50px; display: flex; justify-content: center;">
-                    <div class="cta-button">
-                        <a href="#green-example">
-                            <button class="btn btn-primary" type="button">Probeer het ></button>
-                        </a>
-                    </div>
-                
-                    <!-- <div style="height: 40px; margin: 10px; color: grey">
-                                    of
-                                </div>
-                                
-                                <div class="more-button">
-                                    <a href="#green-example">
-                                        <button class="btn btn-primary" type="button">↓ Bekijk voorbeelden</button>
-                                    </a>
-                                </div> -->
-                </div>
-
-                <!-- Partners -->
-                <div style="display: flex; flex-direction: column; align-items: center; margin-top: 50px">
-                    <div style="color: grey">
-                        In samenwerking met
-                    </div>
-                    <div style="display: flex; flex-direction: row; justify-content: space-around; width: 1100px">
-                        <img src="assets/img/partners/kayak.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
-                        <img src="assets/img/partners/optimadata_logo.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
-                        <img src="assets/img/partners/redcarpetlogo.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
-                        <img src="assets/img/partners/sense_grey.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
-                        <img src="assets/img/partners/staffinghouse_logo_grey.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- Tussenband -->
-        <div style="position: relative; width: 100%; height: 100px; background: #95DBCB; display: block;">
-            <div style="background: white; width: 1000px; height: 80px; position: absolute; top: -30px; margin-left: calc(50% - 500px); z-index: 20;
-                        border-radius: 10px; border: 2px solid black;
-                        display: flex; flex-direction: row;
-            ">
-                <div style="border-right: 1px solid grey; display: flex; align-items: center; justify-content: center; padding: 20px; width: 30%">
-                    <div style="font-size: 30px; margin-right: 20px">
-                        🆙
-                    </div>
-                    <div style="display: flex; flex-direction:column">
-                        <div style="font-size: 14px; font-weight: 700; margin-bottom: -5px">
-                            Stap 1
-                        </div>
-                        <div style="font-size: 22px;">
-                            Upload een CV
-                        </div>
-                    </div>
-                </div>
-                <div
-                    style="border-right: 1px solid grey; display: flex; align-items: center; justify-content: center; padding: 20px; width: 40%">
-                    <div style="font-size: 30px; margin-right: 20px">
-                        🤖
-                    </div>
-                    <div style="display: flex; flex-direction:column">
-                        <div style="font-size: 14px; font-weight: 700; margin-bottom: -5px">
-                            Stap 2
-                        </div>
-                        <div style="font-size: 22px;">
-                            Laat de AI haar magie doen
-                        </div>
-                    </div>
-                </div>
-                
-                <div
-                    style="border-right: 1px solid grey; display: flex; align-items: center; justify-content: center; padding: 20px; width: 30%">
-                    <div style="font-size: 30px; margin-right: 20px">
-                        📄
-                    </div>
-                    <div style="display: flex; flex-direction:column">
-                        <div style="font-size: 14px; font-weight: 700; margin-bottom: -5px">
-                            Stap 3
-                        </div>
-                        <div style="font-size: 22px;">
-                            Download het CV
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="left" style="opacity: 0.5">
+            <img class="logo" src="assets/img/spadework-logo-black.png" />
         </div>
 
-        <!-- Voordelen -->
-        <div style="position: relative; width: 100%; height: calc(100vh - 790px); background: #95DBCB; display: flex; justify-content: center;">
-            <div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; width: 1000px;">
-                <div style="height: 100%; display: flex; flex-direction: column; color: black">
-                    <div style="font-weight: 700; font-size: 24px">
-                        Alles inclusief
-                    </div>
-                    <div>
-                        ✓ You are
-                    </div>
-                    <div>
-                        ✓ Underwater
-                    </div>
-                </div>
-                
-                <div style="height: 100%; display: flex; flex-direction: column; color: black;">
-                    <div style="font-weight: 700; font-size: 24px">
-                        Low Poly
-                    </div>
-                    <div>
-                        ✓ Dnb
-                    </div>
-                    <div>
-                        ✓ Vgm
-                    </div>
-                </div>
-                
-                <div style="height: 100%; display: flex; flex-direction: column; color: black">
-                    <div style="font-weight: 700; font-size: 24px">
-                        Water Mix
-                    </div>
-                    <div>
-                        ✓ Ambient
-                    </div>
-                    <div>
-                        ✓ Jungle
-                    </div>
-                </div>
-            </div>
+        <div class="right" style="opacity: 0.5">
+            <a>CV Transformer</a>
+            <a>Matching</a>
+            <a>Introducties</a>
+            <a>FAQ</a>
+        </div>
+    </div>
+
+
+    <section id="hero" style="height: calc(100vh - 7em); width: calc(100vw - 7em);
+                                display: flex; flex-direction: column; justify-content: end;">
+        <div class="main-quote" style="margin-bottom: 12.5vh">
+            <!-- <img class="logo" src="assets/img/spadework-logo.png" /> -->
+            <h1 style="font-weight: 400; font-size: 3.25em"><b style="font-weight: 500">Spadework</b> levert de nieuwste, beste AI voor Recruiters</h1>
+            <h2 style="font-weight: 300; font-size: 1.75em; margin-top: 0px">Op <u style="cursor: pointer; font-weight: 500; color: blue">onze website</u> kunt u verschillende tools eenvoudig gebruiken bovenop uw bestaande systeem.</h2>
+        
         </div>
 
-        <!-- <div class="coolbackground" style="position: relative; width: 100%; height: 67vh; display: flex; flex-direction: column; justify-content: center; align-items: center">
-            
-            <div style="color: white; font-weight: 400; font-size: 24px; width: 40vw; padding-bottom: 40vh; ">
-                <div>
-                    <span style="font-weight: 500">Spadework</span> maakt <b style="margin-right: 2px">AI tools</b> voor de repetitieve
-                    taken in recruitment.
-                </div>
+        <p style="margin-bottom: 20px">
+            \/ Scroll verder om het in actie te zien
+        </p>
 
-                <div style="margin-top: 30px; font-size: 24px;">
-                    
-                </div>
-            </div>
-
-            <svg style="position: absolute;
-                        top: 0px;
-                        left: 0px;
-                        z-index: 2;
-                        width: 100vw;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#C2EAE1" fill-opacity="1"
-                    d="M0,64L80,69.3C160,75,320,85,480,106.7C640,128,800,160,960,165.3C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-                </path>
-            </svg>
+        <!-- <div class="hero-button">
+            <a href="#green-example">
+                <button class="btn btn-primary" type="button">Probeer de tool</button>
+            </a>
         </div> -->
 
-        <div style="width: 100%; height: 66vh; display: flex; flex-direction: row; justify-content: center; align-items: center">
-        
-            <div style="width: 50%; height: 66vh; background: #C2EAE1;">
-            
-            </div>
+        <!-- <svg class="background-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#C2EAE1" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,106.7C640,128,800,160,960,165.3C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg> -->
+    </section>
 
-            <div style="width: 50%; height: 66vh; background: #C2EAE1;">
-            
+
+    <!-- <section id="shoutouts" style="height: auto; background: #C2EAE1; width: calc(100vw - 7em);">
+        <div style="display: flex; flex-direction: column; align-items: start;">
+            <div style="color: grey; width: 100%; text-align: start; opacity: 0.5;">
+                In trotse samenwerking met
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; width: 1000px; margin-left: -15px;">
+                <img src="assets/img/partners/kayak.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
+                <img src="assets/img/partners/optimadata_logo.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
+                <img src="assets/img/partners/redcarpetlogo.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
+                <img src="assets/img/partners/sense_grey.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
+                <img src="assets/img/partners/staffinghouse_logo_grey.png" style="height: 50px; opacity: 0.5; margin: 10px"/>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="cvtransformer" style="height: calc(100vh - 185px);  background: white; width: calc(100vw - 7em);">
+        <div class="info">
+            <div class="title">CV Transformer</div>
+            <div class="description">
+                <span class="tagline">Maak professionele CVs met één klik.</span> Laat je brand zien <br /> door kandidaten uit te sturen in uw huistijl.
             </div>
         </div>
 
-        <div style="font-size: 34px; padding-right: 0px; margin-top: 70px; height: 1128px; width: 800px; padding: 96px; 
-            border-radius: 2px; box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; border: 1px solid var(--border-page);">
-            
-
-            <div style="display: flex; margin-top: 70px">
-                <div style="font-size: 20px; font-weight: 500; width: 370px; height: 210px; border: 1px solid black">
-                </div>
-                
-                <div style="padding-left: 40px; height: 210px; display: flex; flex-direction: column; font-size: 22px;">
-                    <div style="font-size: 30px; font-weight: 600; margin-top: 10px;">
-                        Spadework Hello
-                    </div>
-                    <div style="margin-top: 20px">
-                        1. Upload een CV
-                    </div>
-                    <div style="margin-top: 10px">
-                        2. Kies een template in uw huisstijl
-                    </div>
-                    <div style="margin-top: 10px">
-                        3. De AI maakt een professioneel CV
-                    </div>
-                </div>
-            </div>
-            
-            <div style="display: flex; margin-top: 50px">
-                <div style="padding-right: 40px; height: 210px; display: flex; flex-direction: column; font-size: 22px;">
-                    <div style="font-size: 30px; font-weight: 600; margin-top: 10px;">
-                        Spadework Match
-                    </div>
-                    <div style="margin-top: 20px">
-                        1. Kies vacature bronnen
-                    </div>
-                    <div style="margin-top: 10px">
-                        2. Kies kandidaat bronnen (Talentpool, LinkedIn, ...)
-                    </div>
-                    <div style="margin-top: 10px">
-                        3. Ontvang automatisch een lijst met de beste matches wanneer nieuwe vacatures online komen
-                    </div>
-                </div>
-                
-                <div style="font-size: 20px; font-weight: 500; width: 370px; height: 210px; border: 1px solid black">
-                    Alpha!
-                </div>
-            </div>
-            
-            <div style="display: flex; margin-top: 50px">
-                <div style="font-size: 20px; font-weight: 500; width: 370px; height: 210px; border: 1px solid black">
-                </div>
-            
-                <div style="padding-left: 40px; height: 210px; display: flex; flex-direction: column; font-size: 22px;">
-                    <div style="font-size: 30px; font-weight: 600; margin-top: 10px;">
-                        Pitches
-                    </div>
-                    <div style="margin-top: 20px">
-                        1. Upload een CV
-                    </div>
-                    <div style="margin-top: 10px">
-                        2. Kies een template in uw huisstijl
-                    </div>
-                    <div style="margin-top: 10px">
-                        3. De AI maakt een professioneel CV
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div style="margin-top: 70px; padding: 20px 0px; background: #C2EAE1; display: flex; flex-direction: column; align-items: center; width: 100%;">
-            <div style="font-size: 16px; font-weight: 500; padding-right: 0px; text-align: center">
-                Op het platform op <u>onze website</u> kunt u verschillende tools moeiteloos gebruiken <b>bovenop uw bestaande systeem</b>
-            </div>
-        </div>
-
-        <div style="margin-top: 30px; padding: 10px 0px; font-weight: 500; font-style: italic; font-size: 14px">
-            Een aantal voorbeelden:
-        </div>
-
-        <div style="margin-top: 10px; padding: 20px 0px; background: white; display: flex; flex-direction: row; justify-content: center; width: 100%;">
-
-        </div>
-
-        <div
-            style="margin-top: 50px; padding: 20px 0px; background: white; display: flex; flex-direction: row; justify-content: center; width: 100%;">
-
-            <div style="padding-right: 40px; height: 300px; display: flex; flex-direction: column; font-size: 22px;">
-                <div style="font-size: 30px; font-weight: 600; margin-top: 10px;">
-                    Matching
-                </div>
-                <div style="margin-top: 20px">
-                    1. Kies vacature bronnen
-                </div>
-                <div style="margin-top: 10px">
-                    2. Kies kandidaat bronnen (Talentpool, LinkedIn, ...)
-                </div>
-                <div style="margin-top: 10px">
-                    3. Ontvang automatisch een lijst met de beste matches </br> <div style="margin-left: 24px">wanneer nieuwe vacatures online komen</div>
-                </div>
-            </div>
-
-            <div style="font-size: 20px; font-weight: 500; width: 400px; height: 300px; border: 1px solid black">
-
-            </div>
-
-        </div>
-        
-        <div
-            style="margin-top: 50px; padding: 20px 0px; background: white; display: flex; flex-direction: row; justify-content: center; width: 100%;">
-        
-            <div style="font-size: 20px; font-weight: 500; width: 600px; height: 300px; border: 1px solid black">
-        
-            </div>
-        
-            <div style="padding-left: 40px; height: 300px; display: flex; flex-direction: column; font-size: 22px;">
-                <div style="font-size: 30px; font-weight: 600; margin-top: 40px;">
-                    Gerichte introducties
-                </div>
-                <div style="margin-top: 30px">
-                    1. Upload een CV
-                </div>
-                <div style="margin-top: 10px">
-                    2. Kies een template in uw huisstijl
-                </div>
-                <div style="margin-top: 10px">
-                    3. De AI maakt een geoptimaliseerd, professioneel CV
-                </div>
-            </div>
+        <div class="video-container">
+            <video id="video" class="video" width="1080" height="" muted defaultMuted playsinline  oncontextmenu="return false;" preload autoplay loop >
+                <source src="assets/img/gameplay_green.webm" type="video/webm">
+                <source src="assets/img/gameplay_green.mp4" type="video/mp4">
+                (video failed to load)
+            </video> 
         </div>
     </section>
 
+    <section id="matching" style="height: calc(100vh - 185px); background: white; width: calc(100vw - 7em);">
+        <div class="info">
+            <div class="title">Matching Tool</div>
+            <div class="description">
+                <span class="tagline">Automatisch de beste matches.</span> Krijg een overzicht van de <br /> beste kandidaten voor elke vacature die online komt.
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video id="video" class="video" width="1080" height="" muted defaultMuted playsinline  oncontextmenu="return false;" preload autoplay loop >
+                <source src="assets/img/gameplay_green.webm" type="video/webm">
+                <source src="assets/img/gameplay_green.mp4" type="video/mp4">
+                (video failed to load)
+            </video> 
+        </div>
+    </section>
+
+    <!-- Let navbar change color -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.topbar');
+            
+            if (window.scrollY > window.innerHeight) {
+                navbar.classList.add('white');
+            } else {
+                navbar.classList.remove('white');
+            }
+        });
+    </script>
 
     <!-- Restart videos on click -->
     <script>
@@ -365,6 +162,5 @@
     </script>
 
 </body>
-
 </html>
 

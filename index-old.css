@@ -1,62 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap');
+
+
+@font-face {
+    font-family: 'Sloth';
+    src: url('assets/fonts/Sloth-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Onest';
+    src: url('assets/fonts/OnestRegular1602-hint.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html {
     scroll-behavior: smooth;
+    background: rgb(238, 237, 237);
+    font-family: 'Instrument Sans', serif;
 }
 /* Fonts */
+
+.logo {
+    margin-left: 20px;
+    width: 160px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
 h1 {
-    font-family: 'Instrument Sans', serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     letter-spacing: 0px;
-    font-size: 3rem;
+    font-size: 4em;
     margin: 0px;
 }
 h2 {
-    font-family: 'Inter', serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 2em;
     margin-top: 20px;
+}
+h2 b {
+    font-weight: 500;
 }
 h2 u {
     font-size: 1.9rem;
 }
 h3 {
-    font-family: 'Inter', serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.7rem;
     margin-top: 30px;
 }
-@media (min-width: 630px) {
-    h1 {
-        font-size: 4.5rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h2 u {
-        font-size: 2.6rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-}
-@media (min-width: 2000px) {
-    h1 {
-        font-size: 5.5rem;
-    }
-    h2 {
-        font-size: 3.2rem;
-    }
-    h2 u {
-        font-size: 3.3rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-}
+
 p {
     font-size: 1rem;
     margin-top: 5px;
@@ -113,17 +113,21 @@ h6 b {
 
 /* Structure */
 body {
-    font-family: 'Inter', sans-serif;
+    position: relative;
     margin: 0px;
     width: 100vw;
     overflow-x: clip;
-    background: #FFF;
+    /* background-size: 20px 20px;
+    background-image: linear-gradient(to right, rgba(128, 128, 128, .051) 1px, transparent 1px), linear-gradient(to bottom, rgba(128, 128, 128, .051) 1px, transparent 1px); */
+    /* background: blue; */
+    background: #95DBCB;
 }
 section {
     width: 90vw;
     padding-left: 5vw;
     padding-right: 5vw;
     overflow-x: clip;
+    position: relative;
 }
 @media (min-width: 950px) {
     section {
@@ -135,6 +139,9 @@ section {
 
 /* Toolbar */
 #toolbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -146,12 +153,6 @@ section {
     flex-direction: row;
     justify-content: end;
     align-items: end;
-}
-.logo {
-    width: 160px;
-    height: auto;
-    display: block;
-    cursor: crosshair;
 }
 .platform-button {
     display: none;
@@ -189,105 +190,24 @@ section {
 
 /* Hero */
 #hero {
-    height: 50vh;
-    padding-top: 10vh;
+    height: 70vh;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: end;
     align-items: start;
+    /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,0) 100%); */
 }
-@media (min-width: 1300px) {
-    #hero {
-        height: 60vh;
-        padding-top: 0vh;
-        padding-bottom: 16vh;
-        justify-content: center;
-    }
-    .main-quote {
-        padding-left: 75px;
-    }
+.main-quote {
+    text-align: start;
+    width: 100%;
 }
-
-/* Spadework definition */
-#hero u {
-    text-decoration: none;
-    /* font-size: 200;
-    text-decoration-style: 10px dashed #C2EAE1; */
-    background-image: linear-gradient(to right, #C2EAE1 90%, rgba(255,255,255,0) 0%);
-    background-position: 0 1.05em; /* Position of the underline */
-    background-size: 20px 8px; /* Size of the dashes */
-    background-repeat: repeat-x;
-    text-decoration: none;
-}
-
-.word-with-tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: help;
-}
-
-.word-with-tooltip .tooltip-image {
-    visibility: hidden;
-    height: 135px;
-    width: 360px;
-    bottom: -155px; /* Position the tooltip image */
-    margin-left: -270px; /* Use half of the tooltip width to center the tooltip*/
-    background-color: #C2EAE1;
-    padding: 5px;
-    z-index: 10;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    opacity: 0;
-    transition: opacity 0.3s;
-    box-shadow: 2px 3px 0px 0px black;
-}
-
-/* Driehoek pijltje */
-.word-with-tooltip .tooltip-image::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 270px;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #C2EAE1 transparent;
-}
-
-.word-with-tooltip:hover .tooltip-image,
-.word-with-tooltip.active .tooltip-image {
-    visibility: visible;
-    opacity: 1;
-}
-
-@media (min-width: 900px) {
-    .word-with-tooltip .tooltip-image {
-        height: 180px;
-        width: 480px;
-        bottom: -200px; /* Position the tooltip image */
-        margin-left: -20px; /* Use half of the tooltip width to center the tooltip*/
-    }
-    .word-with-tooltip .tooltip-image::after {
-        left: 20px;
-        margin-left: -5px;
-    }
-
-}
-
-
-
-
 
 
 
 .hero-button {
-    position: absolute;
-    right: 20vw;
-    top: 55vh;
+    position: relative;
     display: none;
 }
 .hero-button button {
@@ -298,7 +218,7 @@ section {
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform: translate(0px, 0px);
@@ -331,6 +251,7 @@ section {
 #green-example {
     position: relative;
     height: auto;
+    z-index: 2;
 }
 
 /*  Green background things */
@@ -345,9 +266,12 @@ section {
 }
 .background-swoop {
     position: absolute;
-    top: -150px;
+    bottom: -50px;
+    /* Mirror vertically */
+    transform: scale(-1, 1);
+
     left: 0px;
-    z-index: -1;
+    z-index: 2;
     width: 1920px;
 }
 .background-1 {
@@ -389,9 +313,6 @@ section {
     .background-2 {
         height: 130px;
     }
-    .background-swoop {
-        top: -300px;
-    }
     .background-1 {
         height: 250px;
     }
@@ -407,7 +328,7 @@ section {
         width: 3840px;
     }
     .background-swoop {
-        top: -500px;
+        top: -50px;
     }
     .background-1 {
         height: 250px;

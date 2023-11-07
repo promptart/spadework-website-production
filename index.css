@@ -1,81 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap');
 
-
-@font-face {
-    font-family: 'Sloth';
-    src: url('assets/fonts/Sloth-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Onest';
-    src: url('assets/fonts/OnestRegular1602-hint.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@keyframes fadein {
+    0% {
+        background: white;
+    }
+    100% {
+        background: #95DBCB;
+    }
 }
 
 html {
     scroll-behavior: smooth;
+    background: #95DBCB;
+    font-family: 'Instrument Sans', serif;
+    animation: fadein 0.25s ease-in-out forwards;
 }
+
+
+
 body {
-    /* font-family: 'Sloth', sans-serif; */
-    /* font-family: 'Onest', sans-serif; */
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
     margin: 0px;
+    position: relative;
 }
 
-
-.coolbackground {
-    background: rgb(238, 237, 237);
-    background-size: 20px 20px;
-    background-image: linear-gradient(to right, rgba(128, 128, 128, .051) 1px, transparent 1px), linear-gradient(to bottom, rgba(128, 128, 128, .051) 1px, transparent 1px);
+section {
+    padding: 3.5em;
+    border-bottom: 1px solid #95DBCB;
 }
 
-.cta-button button {
+/* Top bar */
+.topbar {
+    background-color: #95DBCB;
+    transition: background-color 0.5s ease;
+}
+.topbar.white {
+    background-color: white;
+}
+.logo {
+    margin-left: 20px;
+    width: 160px;
+    height: auto;
+    display: block;
+}
+.topbar a {
+    color: #222;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+.topbar a:hover {
     color: black;
-    background: #C2EAE1 !important;
-    width: 250px;
-    height: 50px;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    border-radius: 4px;
+    /* font-weight: 500; */
+    text-decoration: underline;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: translate(0px, 0px);
-    box-shadow: 2px 3px 0px 0px black;
 }
 
-.cta-button button:hover {
-    background: #a0c7be !important;
-    transform: translate(1px, 2px);
-    box-shadow: 1px 1px 0px 0px black;
+
+/* Hero */
+h2 u:hover {
+    color: #222;
 }
 
-.more-button button {
+/* Secties */
+.info {
+    /* width: 700px; */
+}
+.title {
+    font-weight: 100;
+    font-size: 1em;
+    /* text-transform: lowercase; */
+    color: #222;
+    margin-bottom: 10px;
+}
+.tagline {
+    font-weight: 500;
     color: black;
-    background: #C2EAE1 !important;
-    width: 250px;
-    height: 50px;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: translate(1px, 2px);
 }
-.more-button button:hover {
-    background: #a0c7be !important;
-    transform: translate(1px, 2px);
+.description {
+    font-weight: 300;
+    font-size: 2em;
+    color: #222;
+}
+.video-container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.video {
+
+
+
+
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 2px;
 }
