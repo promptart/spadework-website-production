@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assets/img/spade-fav.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- General tags -->
+    <title>Spadework</title>
+    <meta name="description" content="AI for Staffing Agencies">
+    <link rel="image_src" type="image/jpeg" href="https://i.imgur.com/UEyOyEE.jpg" />
+
+    <!-- Open Graph (Facebook) tags -->
+    <meta property="og:title" content="Spadework" />
+    <meta property="og:description" content="AI for Staffing Agencies" />
+    <meta property="og:image" content="https://i.imgur.com/UEyOyEE.jpg" />
+    <meta property="og:url" content="https://spadework.ai" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Spadework">
+    <meta name="twitter:description" content="AI for Staffing Agencies">
+    <meta name="twitter:image" content="https://i.imgur.com/UEyOyEE.jpg">
+</head>
+
+<body>
+
+    <section style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+
+        <!-- <img src="assets/img/spade-fav.png" style="position: absolute; top: 20px; left: auto; width: 40px;"> -->
+        <!-- <div
+            style="height: 56px; background: #C2EAE1; display: flex; flex-direction: column; align-items: center; width: 100%;">
+        </div> -->
+
+        <div style="font-size: 30px; padding-right: 0px; margin-top: 70px;">
+            <b style="margin-right: 2px">Spadework</b> maakt AI tools om de repetitieve taken in <br /> recruitment te automatiseren.
+        </div>
+
+        <div style="margin-top: 70px; padding: 20px 0px; background: #C2EAE1; display: flex; flex-direction: column; align-items: center; width: 100%;">
+            <div style="font-size: 16px; font-weight: 500; padding-right: 0px; text-align: center">
+                Op het platform op <u>onze website</u> kunt u verschillende tools moeiteloos gebruiken <b>bovenop uw bestaande systeem</b>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; padding: 10px 0px; font-weight: 500; font-style: italic; font-size: 14px">
+            Een aantal voorbeelden:
+        </div>
+
+        <div style="margin-top: 10px; padding: 20px 0px; background: white; display: flex; flex-direction: row; justify-content: center; width: 100%;">
+
+            <div style="font-size: 20px; font-weight: 500; width: 600px; height: 300px; border: 1px solid black">
+            </div>
+
+            <div style="padding-left: 40px; height: 300px; display: flex; flex-direction: column; font-size: 22px;">
+                <div style="font-size: 30px; font-weight: 600; margin-top: 10px;">
+                    CV Transformer
+                </div>
+                <div style="margin-top: 20px">
+                    1. Upload een CV
+                </div>
+                <div style="margin-top: 10px">
+                    2. Kies een template in uw huisstijl
+                </div>
+                <div style="margin-top: 10px">
+                    3. De AI maakt een geoptimaliseerd, professioneel CV
+                </div>
+            </div>
+        </div>
+
+        <div
+            style="margin-top: 50px; padding: 20px 0px; background: white; display: flex; flex-direction: row; justify-content: center; width: 100%;">
+
+            <div style="padding-right: 40px; height: 300px; display: flex; flex-direction: column; font-size: 22px;">
+                <div style="font-size: 30px; font-weight: 600; margin-top: 10px;">
+                    Matching
+                </div>
+                <div style="margin-top: 20px">
+                    1. Kies vacature bronnen
+                </div>
+                <div style="margin-top: 10px">
+                    2. Kies kandidaat bronnen (Talentpool, LinkedIn, ...)
+                </div>
+                <div style="margin-top: 10px">
+                    3. Ontvang automatisch een lijst met de beste matches </br> <div style="margin-left: 24px">wanneer nieuwe vacatures online komen</div>
+                </div>
+            </div>
+
+            <div style="font-size: 20px; font-weight: 500; width: 400px; height: 300px; border: 1px solid black">
+
+            </div>
+
+        </div>
+        
+        <div
+            style="margin-top: 50px; padding: 20px 0px; background: white; display: flex; flex-direction: row; justify-content: center; width: 100%;">
+        
+            <div style="font-size: 20px; font-weight: 500; width: 600px; height: 300px; border: 1px solid black">
+        
+            </div>
+        
+            <div style="padding-left: 40px; height: 300px; display: flex; flex-direction: column; font-size: 22px;">
+                <div style="font-size: 30px; font-weight: 600; margin-top: 40px;">
+                    Gerichte introducties
+                </div>
+                <div style="margin-top: 30px">
+                    1. Upload een CV
+                </div>
+                <div style="margin-top: 10px">
+                    2. Kies een template in uw huisstijl
+                </div>
+                <div style="margin-top: 10px">
+                    3. De AI maakt een geoptimaliseerd, professioneel CV
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Restart videos on click -->
+    <script>
+        $(document).ready(function(){
+            var myVideo = $('#video1')[0];
+            $(myVideo).on('click', function(){
+                this.currentTime = 0;
+                this.play();
+            });
+            $(myVideo).on('ended', function(){
+                this.currentTime = 0;
+                this.play();
+            });
+        });
+        $(document).ready(function(){
+            var myVideo = $('#video2')[0];
+            $(myVideo).on('click', function(){
+                this.currentTime = 0;
+                this.play();
+            });
+            $(myVideo).on('ended', function(){
+                this.currentTime = 0;
+                this.play();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
