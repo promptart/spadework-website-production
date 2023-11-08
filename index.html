@@ -2,322 +2,315 @@
 
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="assets/img/spade-fav.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="assets/img/spade-fav.png">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-    <!-- General tags -->
-    <title>Spadework</title>
-    <meta name="description" content="AI for Staffing Agencies">
-    <link rel="image_src" type="image/jpeg" href="https://i.imgur.com/UEyOyEE.jpg" />
+        <!-- General tags -->
+        <title>Spadework</title>
+        <meta name="description" content="AI for Staffing Agencies">
+        <link rel="image_src" type="image/jpeg" href="https://i.imgur.com/UEyOyEE.jpg" />
 
-    <!-- Open Graph (Facebook) tags -->
-    <meta property="og:title" content="Spadework" />
-    <meta property="og:description" content="AI for Staffing Agencies" />
-    <meta property="og:image" content="https://i.imgur.com/UEyOyEE.jpg" />
-    <meta property="og:url" content="https://spadework.ai" />
+        <!-- Open Graph (Facebook) tags -->
+        <meta property="og:title" content="Spadework" />
+        <meta property="og:description" content="AI for Staffing Agencies" />
+        <meta property="og:image" content="https://i.imgur.com/UEyOyEE.jpg" />
+        <meta property="og:url" content="https://spadework.ai" />
 
-    <!-- Twitter Card tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Spadework">
-    <meta name="twitter:description" content="AI for Staffing Agencies">
-    <meta name="twitter:image" content="https://i.imgur.com/UEyOyEE.jpg">
-</head>
+        <!-- Twitter Card tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Spadework">
+        <meta name="twitter:description" content="AI for Staffing Agencies">
+        <meta name="twitter:image" content="https://i.imgur.com/UEyOyEE.jpg">
+    </head>
 
-<body>
+    <body>
 
-    <div class="topbar" style="position: fixed; top: 0px; left: 0px; width: 100%;
-                        display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+        <div class="topbar" style="position: fixed; top: 0px; left: 0px; width: 100%; flex-direction: row; align-items: center; justify-content: space-between;">
 
-        <div class="left">
-            <img class="logo" src="assets/img/spadework-logo-black.png" />
+            <div class="left">
+                <img class="logo" src="assets/img/spadework-logo-black.png" />
+            </div>
+
+            <div class="right">
+                <a href="#cvtransformer">CV Transformer</a>
+                <a href="#pitch">Pitch</a>
+                <a href="#matching">Matching</a>
+                <a href="#team">Contact</a>
+            </div>
         </div>
 
-        <div class="right">
-            <a href="#cvtransformer">CV Transformer</a>
-            <a href="#pitch">Pitch</a>
-            <a href="#matching">Matching</a>
-            <a href="#team">Contact</a>
-        </div>
-    </div>
 
+        <section id="hero" style="display: flex; flex-direction: column; justify-content: end; height: auto">
+            <div class="main-quote" style="margin-bottom: 0px;">
+                <h1 style="font-weight: 400;"><b style="font-weight: 500">Spadework</b> levert de nieuwste, beste AI voor Recruiters</h1>
+                <h2 style="font-weight: 300; margin-top: 0px">Op ons <a style="cursor: pointer; font-weight: 500;">online platform</a> kunt u verschillende tools eenvoudig gebruiken bovenop uw bestaande systeem.</h2>
 
-    <section id="hero" style="height: calc(50vh - 7em); width: calc(100vw - 7em);
-                                display: flex; flex-direction: column; justify-content: end;">
-        <div class="main-quote" style="margin-bottom: 0px;">
-            <h1 style="font-weight: 400; font-size: 3.25em"><b style="font-weight: 500">Spadework</b> levert de nieuwste, beste AI voor Recruiters</h1>
-            <h2 style="font-weight: 300; font-size: 1.75em; margin-top: 0px">Op ons <a style="cursor: pointer; font-weight: 500;">online platform</a> kunt u verschillende tools eenvoudig gebruiken bovenop uw bestaande systeem.</h2>
+                <div class="hero-button" style="margin-top: 50px; margin-left: 50px">
+                    <a href="">
+                        <button class="btn btn-primary" type="button">Probeer de tool</button>
+                    </a>
+                </div>
+            </div>
 
-            <div class="hero-button" style="margin-top: 50px; margin-left: 50px">
-                <a href="">
+            <!-- <div class="hero-button">
+                <a href="#green-example">
                     <button class="btn btn-primary" type="button">Probeer de tool</button>
                 </a>
-            </div>
-        </div>
+            </div> -->
 
-        <!-- <div class="hero-button">
-            <a href="#green-example">
-                <button class="btn btn-primary" type="button">Probeer de tool</button>
-            </a>
-        </div> -->
-
-        <!-- <svg class="background-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#C2EAE1" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,106.7C640,128,800,160,960,165.3C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-        </svg> -->
-    </section>
+            <!-- <svg class="background-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#C2EAE1" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,106.7C640,128,800,160,960,165.3C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            </svg> -->
+        </section>
 
 
-    <!-- <section id="shoutouts" style="height: auto; background: #C2EAE1; width: calc(100vw - 7em);">
-    </section> -->
+        <!-- <section id="shoutouts" style="height: auto; background: #C2EAE1; width: calc(100vw - 7em);">
+        </section> -->
 
-    <section id="cvtransformer" style="height: 90vh;  background: white; width: calc(100vw - 7em);">
-        <svg class="top-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#95DBCB" fill-opacity="1"
-                d="M0,128L120,106.7C240,85,480,43,720,64C960,85,1200,171,1320,213.3L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-            </path>
-        </svg>
+        <section id="cvtransformer" style="background: white;">
+            <svg class="top-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#95DBCB" fill-opacity="1"
+                    d="M0,128L120,106.7C240,85,480,43,720,64C960,85,1200,171,1320,213.3L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+                </path>
+            </svg>
 
-        <div class="info" style="margin-top: 80px">
-            <div class="title">CV Transformer</div>
-            <div class="description">
-                <span class="tagline">Maak professionele CVs met één klik.</span> Toon kandidaten in uw huistijl, zonder een uur lang het CV over te tikken.
-            </div>
-        </div>
-        
-        <div class="video-container">
-            <video id="video" class="video boxshadow" width="1080" height="" muted defaultMuted playsinline oncontextmenu="return false;"
-                preload autoplay loop>
-                <source src="assets/img/gameplay_green.webm" type="video/webm">
-                <source src="assets/img/gameplay_green.mp4" type="video/mp4">
-                (video failed to load)
-            </video>
-        </div>
-
-        <!-- class="bottom-swoop" -->
-        <svg class="bottom-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#F4AC45" fill-opacity="1"
-                d="M0,288L80,272C160,256,320,224,480,192C640,160,800,128,960,149.3C1120,171,1280,245,1360,282.7L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-            </path>
-        </svg>
-    </section>
-
-    <section id="pitch" style="height: 90vh; background: #F4AC45; width: calc(100vw - 7em);">
-        <div class="info">
-            <!-- <span style="font-size: 0.6rem; color: green;">In Private Beta</span> -->
-            <div class="title">Matching Tool</div>
-            <div class="description">
-                <span class="tagline">Vind de beste kandidaten.</span> Door zowel de vacature als kandidaat goed te begrijpen, maakt onze tool automatisch overzichten van vacatures en kandidaten uit uw Talentpool en LinkedIn.
-            </div>
-        
-        </div>
-        
-        <div class="video-container" style="position: relative">
-            <img class="boxshadow" style="width: 1080px; height: 100%; object-fit: cover;" src="assets/img/matching_preview.png" />
-            <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center">
-                <div>
-                    Coming Soon
+            <div class="info" style="margin-top: 80px">
+                <div class="title">CV Transformer</div>
+                <div class="description">
+                    <span class="tagline">Maak professionele CVs met één klik.</span> Toon kandidaten in uw huistijl, zonder een uur lang het CV over te tikken.
                 </div>
             </div>
-        </div>
-
-        <svg class="bottom-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="white" fill-opacity="1"
-                d="M0,288L80,272C160,256,320,224,480,208C640,192,800,192,960,186.7C1120,181,1280,171,1360,165.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-            </path>
-        </svg>
-    </section>
-
-    <section id="matching" style="height: 90vh; background: white; width: calc(100vw - 7em);">
-        <div class="info">
-            <!-- <span style="font-size: 0.6rem; color: green;">In Private Beta</span> -->
-            <div class="title">De Pitch</div>
-            <div class="description">
-                <span class="tagline">Benadruk de juiste kwaliteiten.</span> De AI begrijpt wat er belangrijk is voor de sollicitatie en schrijft een perfecte introductie in uw eigen schrijfstijl.
-            </div>
-        </div>
-
-        <div class="video-container">
-            <video id="video" class="video boxshadow" width="1080" height="" muted defaultMuted playsinline
-                oncontextmenu="return false;" paused>
-                <source src="assets/img/gameplay_white.webm" type="video/webm">
-                <source src="assets/img/gameplay_white.mp4" type="video/mp4">
-                (video failed to load)
-            </video>
-        </div>
-    </section>
-
-    <section id="team" style="height: 70vh; background: #95DBCB; width: calc(100vw - 7em); flex-direction: column; align-items: center; justify-content: start">
-        <!-- class="top-swoop" -->
-        <svg class="top-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="white" fill-opacity="1"
-                d="M0,128L80,154.7C160,181,320,235,480,261.3C640,288,800,288,960,261.3C1120,235,1280,181,1360,154.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
-            </path>
-        </svg>
-        
-        <div class="title" style="font-weight: 100; font-size: 2rem; text-align: center; margin-top: 200px; ">
-            Ons Team
-        </div>
-
-        <div style="display: flex; margin-left: auto; margin-right: auto">
-            <div style="font-size: 2rem;">
-                <div style="display: flex; flex-wrap: 1">
-                    <div class="gangster-container">
-                        <img src="assets/img/alfonso.jpg" class="gangster-pic" />
-
-                        <div>
-                            <div class="gangster">
-                                Alfonso Taboada
-                            </div>
-                            <div class="gangster-description">
-                                AI Technologie
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gangster-container">
-                        <img src="assets/img/lucas.jpg" class="gangster-pic" />
-
-                        <div>
-                            <div class="gangster">
-                                Lucas Meijer
-                            </div>
-                            <div class="gangster-description">
-                                Customer Success
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gangster-container">
-                        <img src="assets/img/lodewijk.jpg" class="gangster-pic" />
-
-                        <div>
-                            
-                            <div class="gangster">
-                                Lodewijk Loerakker
-                            </div>
-                            <div class="gangster-description">
-                                AI Product
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gangster-container">
-                        <img src="assets/img/lars.jpg" class="gangster-pic" />
-
-                        <div>
-                            <div class="gangster">
-                                Lars Buijtelaar
-                            </div>
-                            <div class="gangster-description">
-                                Organisatie
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="title" style="font-weight: 100; font-size: 1rem; text-align: center;">
-            Samenwerken? Mail naar: <a href="mailto: contact@spadework.nl" style="margin-left: 5px"><u>contact@spadework.nl</u></a>
-        </div>
-
-        <!-- class="bottom-swoop" -->
-        <svg class="bottom-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#272D2D" fill-opacity="1"
-                d="M0,288L80,266.7C160,245,320,203,480,186.7C640,171,800,181,960,154.7C1120,128,1280,64,1360,32L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-            </path>
-        </svg>
-
-        <!-- <div style="display: flex; flex-direction: column; align-items: start; margin-top: 50px;">
-            <div style="color: grey; width: 100%; text-align: start; opacity: 0.5; text-align: center; margin-top: 100px">
-                In trotse samenwerking met
-            </div>
-            <div style="display: flex; flex-direction: row; justify-content: space-between; width: 1000px; margin-left: -15px;">
-                <img src="assets/img/partners/kayak.png" style="height: 50px; opacity: 0.5; margin: 10px" />
-                <img src="assets/img/partners/optimadata_logo.png" style="height: 50px; opacity: 0.5; margin: 10px" />
-                <img src="assets/img/partners/redcarpetlogo.png" style="height: 50px; opacity: 0.5; margin: 10px" />
-                <img src="assets/img/partners/sense_grey.png" style="height: 50px; opacity: 0.5; margin: 10px" />
-                <img src="assets/img/partners/staffinghouse_logo_grey.png" style="height: 50px; opacity: 0.5; margin: 10px" />
-            </div>
-        </div> -->
-
-    </section>
-
-    <section id="misc" style="height: 400px; background: #272D2D; color: white; width: calc(100vw - 7em); align-items: center">
-
-        <img src="assets/img/spadework-logo-black.png" style="height: auto; width: 250px; margin-top: 100px; margin-bottom: 50px;" class="invert-color" />
-
-        <div style="display: flex; flex-direction: row; justify-content: center; width: 100%">
-            <div style="display: flex; flex-direction:column; align-items: center; margin: 5px">
-                <a href="mailto: contact@spadework.nl" style="color: white; margin-bottom: 20px; text-decoration: none">
-                    contact@spadework.nl
-                </a>
-                
-                <a href="/legal/TOS.md.html" style="color: white; margin-bottom: 10px">
-                    Terms & Conditions
-                </a>
-        
-		        <a href="/legal/TOS.md.html#uptime-security-and-privacy" style="color: white; margin-bottom: 30px">
-                    Privacy Agreement
-                </a>
-
-                <a style=" margin-bottom: 10px; color: lightgray">
-                    BRN: NL864956836B01
-                </a>
-                <a style=" color: lightgray">
-                    VAT number: 89357191
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Let navbar change color -->
-    <script>
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.topbar');
             
-            if (window.scrollY > window.innerHeight * 0.6) {
-                navbar.classList.add('white');
-            } else {
-                navbar.classList.remove('white');
-            }
-        });
-    </script>
+            <div class="video-container">
+                <video id="video" class="video boxshadow" width="1080" height="" muted defaultMuted playsinline oncontextmenu="return false;"
+                    preload autoplay loop>
+                    <source src="assets/img/gameplay_green.webm" type="video/webm">
+                    <source src="assets/img/gameplay_green.mp4" type="video/mp4">
+                    (video failed to load)
+                </video>
+            </div>
 
-    <!-- Restart videos on click -->
-    <script>
-        $(document).ready(function(){
-            var myVideo = $('#video1')[0];
-            $(myVideo).on('click', function(){
-                this.currentTime = 0;
-                this.play();
-            });
-            $(myVideo).on('ended', function(){
-                this.currentTime = 0;
-                this.play();
-            });
-        });
-        $(document).ready(function(){
-            var myVideo = $('#video2')[0];
-            $(myVideo).on('click', function(){
-                this.currentTime = 0;
-                this.play();
-            });
-            $(myVideo).on('ended', function(){
-                this.currentTime = 0;
-                this.play();
-            });
-        });
-    </script>
+            <!-- class="bottom-swoop" -->
+            <svg class="bottom-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#F4AC45" fill-opacity="1"
+                    d="M0,288L80,272C160,256,320,224,480,192C640,160,800,128,960,149.3C1120,171,1280,245,1360,282.7L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
+        </section>
 
-</body>
+        <section id="pitch" style="background: #F4AC45;">
+            <div class="info" style="margin-top: 40px">
+                <!-- <span style="font-size: 0.6rem; color: green;">In Private Beta</span> -->
+                <div class="title">Matching Tool</div>
+                <div class="description">
+                    <span class="tagline">Vind de beste kandidaten.</span> Door zowel de vacature als kandidaat goed te begrijpen, maakt onze tool automatisch overzichten van vacatures en kandidaten uit uw Talentpool en LinkedIn.
+                </div>
+            
+            </div>
+            
+            <div class="video-container" style="position: relative">
+                <img class="boxshadow" style="width: 1080px; height: 100%; object-fit: cover; max-width: 100vw" src="assets/img/matching_preview.png" />
+                <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center">
+                    <div>
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+
+            <svg class="bottom-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,288L80,272C160,256,320,224,480,208C640,192,800,192,960,186.7C1120,181,1280,171,1360,165.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+
+        <section id="matching" style="background: white;">
+            <div class="info" style="margin-top: 80px">
+                <!-- <span style="font-size: 0.6rem; color: green;">In Private Beta</span> -->
+                <div class="title">De Pitch</div>
+                <div class="description">
+                    <span class="tagline">Benadruk de juiste kwaliteiten.</span> De AI begrijpt wat er belangrijk is voor de sollicitatie en schrijft een perfecte introductie in uw eigen schrijfstijl.
+                </div>
+            </div>
+
+            <div class="video-container">
+                <video id="video" class="video boxshadow" width="1080" height="" muted defaultMuted playsinline
+                    oncontextmenu="return false;" paused>
+                    <source src="assets/img/gameplay_white.webm" type="video/webm">
+                    <source src="assets/img/gameplay_white.mp4" type="video/mp4">
+                    (video failed to load)
+                </video>
+            </div>
+        </section>
+
+        <section id="team" style="height: auto;background: #95DBCB; flex-direction: column; align-items: center; justify-content: start">
+            <!-- class="top-swoop" -->
+            <svg class="top-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,128L80,154.7C160,181,320,235,480,261.3C640,288,800,288,960,261.3C1120,235,1280,181,1360,154.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
+            
+            <div class="title" style="font-weight: 100; font-size: 2rem; text-align: center; margin-top: 150px; ">
+                Ons Team
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; font-size: 2rem;">
+                <div class="gangster-container">
+                    <img src="assets/img/alfonso.jpg" class="gangster-pic" />
+
+                    <div>
+                        <div class="gangster">
+                            Alfonso Taboada
+                        </div>
+                        <div class="gangster-description">
+                            AI Technologie
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="gangster-container">
+                    <img src="assets/img/lucas.jpg" class="gangster-pic" />
+
+                    <div>
+                        <div class="gangster">
+                            Lucas Meijer
+                        </div>
+                        <div class="gangster-description">
+                            Customer Success
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="gangster-container">
+                    <img src="assets/img/lodewijk.jpg" class="gangster-pic" />
+
+                    <div>
+                        
+                        <div class="gangster">
+                            Lodewijk Loerakker
+                        </div>
+                        <div class="gangster-description">
+                            AI Product
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gangster-container">
+                    <img src="assets/img/lars.jpg" class="gangster-pic" />
+
+                    <div>
+                        <div class="gangster">
+                            Lars Buijtelaar
+                        </div>
+                        <div class="gangster-description">
+                            AI Organisatie
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title" style="font-weight: 100; font-size: 1rem; text-align: center; margin-bottom: 70px;">
+                Samenwerken? Mail naar: <a href="mailto: contact@spadework.nl" style="margin-left: 5px"><u>contact@spadework.nl</u></a>
+            </div>
+
+            <!-- class="bottom-swoop" -->
+            <svg class="bottom-swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#272D2D" fill-opacity="1"
+                    d="M0,288L80,266.7C160,245,320,203,480,186.7C640,171,800,181,960,154.7C1120,128,1280,64,1360,32L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
+
+            <!-- <div style="display: flex; flex-direction: column; align-items: start; margin-top: 50px;">
+                <div style="color: grey; width: 100%; text-align: start; opacity: 0.5; text-align: center; margin-top: 100px">
+                    In trotse samenwerking met
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; width: 1000px; margin-left: -15px;">
+                    <img src="assets/img/partners/kayak.png" style="height: 50px; opacity: 0.5; margin: 10px" />
+                    <img src="assets/img/partners/optimadata_logo.png" style="height: 50px; opacity: 0.5; margin: 10px" />
+                    <img src="assets/img/partners/redcarpetlogo.png" style="height: 50px; opacity: 0.5; margin: 10px" />
+                    <img src="assets/img/partners/sense_grey.png" style="height: 50px; opacity: 0.5; margin: 10px" />
+                    <img src="assets/img/partners/staffinghouse_logo_grey.png" style="height: 50px; opacity: 0.5; margin: 10px" />
+                </div>
+            </div> -->
+
+        </section>
+
+        <section id="misc" style="height: 400px; background: #272D2D; color: white; align-items: center">
+
+            <img src="assets/img/spadework-logo-black.png" style="height: auto; width: 250px; margin-top: 100px; margin-bottom: 50px;" class="invert-color" />
+
+            <div style="display: flex; flex-direction: row; justify-content: center; width: 100%">
+                <div style="display: flex; flex-direction:column; align-items: center; margin: 5px">
+                    <a href="mailto: contact@spadework.nl" style="color: white; margin-bottom: 20px; text-decoration: none">
+                        contact@spadework.nl
+                    </a>
+                    
+                    <a href="/legal/TOS.md.html" style="color: white; margin-bottom: 10px">
+                        Terms & Conditions
+                    </a>
+            
+                    <a href="/legal/TOS.md.html#uptime-security-and-privacy" style="color: white; margin-bottom: 30px">
+                        Privacy Agreement
+                    </a>
+
+                    <a style=" margin-bottom: 10px; color: lightgray">
+                        BRN: NL864956836B01
+                    </a>
+                    <a style=" color: lightgray">
+                        VAT number: 89357191
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let navbar change color -->
+        <script>
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.topbar');
+                
+                if (window.scrollY > window.innerHeight * 0.6) {
+                    navbar.classList.add('white');
+                } else {
+                    navbar.classList.remove('white');
+                }
+            });
+        </script>
+
+        <!-- Restart videos on click -->
+        <script>
+            $(document).ready(function(){
+                var myVideo = $('#video1')[0];
+                $(myVideo).on('click', function(){
+                    this.currentTime = 0;
+                    this.play();
+                });
+                $(myVideo).on('ended', function(){
+                    this.currentTime = 0;
+                    this.play();
+                });
+            });
+            $(document).ready(function(){
+                var myVideo = $('#video2')[0];
+                $(myVideo).on('click', function(){
+                    this.currentTime = 0;
+                    this.play();
+                });
+                $(myVideo).on('ended', function(){
+                    this.currentTime = 0;
+                    this.play();
+                });
+            });
+        </script>
+    </body>
 </html>
 

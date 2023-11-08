@@ -12,16 +12,42 @@ html {
 body {
     margin: 0px;
     position: relative;
+    overflow-x: hidden;
 }
 
 section {
-    padding: 3.5em;
+    padding: 1em;
+    width: calc(100vw - 2em);
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 70vh;
+}
+@media (min-width: 1300px) {
+    section {
+        padding: 3.5em;
+        width: calc(100vw - 7em);
+        height: 90vh;
+    }
+}
+
+.topbar {
+    display: none;
+}
+@media (min-width: 1300px) {
+    .topbar {
+        display: flex;
+    }
 }
 
 /* Introductie */
+.main-quote h1 { font-size: 1.75rem; }
+.main-quote h2 { font-size: 1.25rem; }
+@media (min-width: 1300px) {
+    .main-quote h1 { font-size: 3.25rem; }
+    .main-quote h2 { font-size: 1.75rem; }
+}
+
 .hero-button {
     position: relative;
     display: none;
@@ -77,7 +103,7 @@ section {
 .topbar a {
     color: #222;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-right: 20px;
 }
 .topbar a:hover {
@@ -128,10 +154,11 @@ h2 a:hover {
     z-index: 2;
     position: relative;
     width: 1080px;
+    max-width: calc(100vw - 2em);
 }
 .title {
     font-weight: 100;
-    font-size: 1em;
+    font-size: 1rem;
     /* text-transform: lowercase; */
     color: #222;
     margin-bottom: 10px;
@@ -143,10 +170,25 @@ h2 a:hover {
     color: black;
 }
 .description {
+    font-size: 1.5rem;
     font-weight: 300;
-    font-size: 2em;
     color: #222;
 }
+
+.main-quote h1 {
+    font-size: 1.75rem;
+}
+
+.main-quote h2 {
+    font-size: 1.25rem;
+}
+
+@media (min-width: 1300px) {
+    .description {
+        font-size: 2rem;
+    }
+}
+
 .video-container {
     width: 100%;
     margin-top: 50px;
@@ -155,6 +197,7 @@ h2 a:hover {
 }
 .video {
     border-radius: 2px;
+    max-width: calc(100vw - 2em);
 }
 
 .boxshadow {
@@ -169,12 +212,14 @@ h2 a:hover {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 20px;
+    margin: 20px 10px;
     width: 240px;
+    max-width: calc(50vw - 40px);
 }
 
 .gangster-pic {
     width: 240px;
+    max-width: calc(50vw - 40px);
 }
 
 .gangster {
