@@ -21,6 +21,36 @@ section {
     flex-direction: column;
 }
 
+/* Introductie */
+.hero-button {
+    position: relative;
+    display: none;
+}
+.hero-button button {
+    color: black;
+    background: #C2EAE1 !important;
+    width: 250px;
+    height: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translate(0px, 0px);
+    box-shadow: 2px 3px 0px 0px black;
+}
+.hero-button button:hover {
+    background: #a0c7be !important;
+    transform: translate(1px, 2px);
+    box-shadow: 0px 0px black;
+}
+/* Only show Learn More button on big screens */
+@media (min-width: 1300px) {
+    .hero-button {
+        display: block;
+    }
+}
 
 /* Top bar */
 .topbar {
@@ -134,12 +164,35 @@ h2 a:hover {
 }
 
 /* Team */
-.gangster {
 
+.gangster-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 20px;
+    width: 240px;
+}
+
+.gangster-pic {
+    width: 240px;
+}
+
+.gangster {
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 .gangster-description {
     font-weight: 300;
     font-size: 0.75rem;
     color: #222;
     margin-bottom: 20px;
+}
+
+
+/* Bottom text */
+
+.invert-color {
+    /* use effects to make black image white */
+    filter: invert(1);
+    -webkit-filter: invert(1);
 }
