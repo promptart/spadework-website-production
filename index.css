@@ -97,6 +97,7 @@ h2 a:hover {
     /* width: 700px; */
     z-index: 2;
     position: relative;
+    width: 1080px;
 }
 .title {
     font-weight: 100;
@@ -108,7 +109,7 @@ h2 a:hover {
     align-items: center;
 }
 .tagline {
-    font-weight: 500;
+    font-weight: 600;
     color: black;
 }
 .description {
@@ -123,6 +124,22 @@ h2 a:hover {
     justify-content: center;
 }
 .video {
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
     border-radius: 2px;
+}
+
+.boxshadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/* Team */
+.gangster {
+
+}
+.gangster-description {
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: #222;
+    margin-bottom: 20px;
 }
