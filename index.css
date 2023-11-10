@@ -41,12 +41,17 @@ section {
 }
 
 /* Introductie */
-.main-quote h1 { font-size: 1.75rem; }
-.main-quote h2 { font-size: 1.25rem; }
+.main-quote h1 { font-size: 1.75rem; margin-bottom: 50px; }
+.main-quote h2 { font-size: 1.5rem; }
 @media (min-width: 1300px) {
     .main-quote h1 { font-size: 3.25rem; }
     .main-quote h2 { font-size: 1.75rem; }
 }
+
+#hero {
+    padding-top: 50px;
+}
+
 
 .hero-button {
     position: relative;
@@ -99,6 +104,9 @@ section {
     width: 160px;
     height: auto;
     display: block;
+}
+.logo.hidden {
+    opacity: 0.5;
 }
 .topbar a {
     color: #222;
@@ -173,14 +181,6 @@ h2 a:hover {
     font-size: 1.5rem;
     font-weight: 300;
     color: #222;
-}
-
-.main-quote h1 {
-    font-size: 1.75rem;
-}
-
-.main-quote h2 {
-    font-size: 1.25rem;
 }
 
 @media (min-width: 1300px) {
