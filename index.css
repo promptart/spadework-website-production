@@ -46,7 +46,7 @@ section {
 .main-quote h2 { font-size: 1.5rem}
 
 @media (min-width: 1300px) {
-    .main-quote { margin-top: 100px; margin-bottom: 150px }
+    .main-quote { margin-top: 100px; margin-bottom: 100px }
     .main-quote h1 { font-size: 3.25rem; margin-bottom: 20px}
     .main-quote h2 { font-size: 1.75rem }
 }
@@ -223,8 +223,17 @@ h2 a:hover {
 .gangster-pic {
     width: 240px;
     max-width: calc(50vw - 40px);
+    border-radius: 5px;
+    transform: rotateY(0deg);
+    transform: rotateZ(0deg);
+    transition: transform 0.5s;
+    cursor: grab;
 }
 
+.gangster-container:hover .gangster-pic {
+    transform: rotateY(15deg);
+    transform: rotateZ(2deg);
+}
 .gangster {
     font-size: 1.5rem;
     margin-top: 10px;
