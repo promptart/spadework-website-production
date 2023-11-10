@@ -27,7 +27,7 @@ section {
     section {
         padding: 120px;
         width: calc(100vw - 240px);
-        height: 90vh;
+        height: 70vh;
     }
 }
 
@@ -142,7 +142,7 @@ h2 a:hover {
     z-index: 1;
     
     /* Flip */
-    transform: scaleY(0.4);
+    transform: scaleY(0.2);
     transform-origin: 0% 0%;
 }
 .bottom-swoop {
@@ -153,7 +153,7 @@ h2 a:hover {
     z-index: 1;
 
     /* Flip */
-    transform: scaleY(0.25);
+    transform: scaleY(0.2);
     transform-origin: 0% 100%;
 }
 
@@ -167,6 +167,13 @@ h2 a:hover {
     width: 1080px;
     max-width: calc(100vw - 2em);
 }
+@media (max-width: 1300px) {
+    .info {
+        padding-top: 100px;
+    }
+    
+}
+
 .title {
     font-weight: 100;
     font-size: 1rem;
@@ -204,8 +211,6 @@ h2 a:hover {
 }
 
 .boxshadow {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
