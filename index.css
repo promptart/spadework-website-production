@@ -46,7 +46,7 @@ section {
 .main-quote h2 { font-size: 1.5rem}
 
 @media (min-width: 1300px) {
-    .main-quote { margin-top: 100px; margin-bottom: 100px }
+    .main-quote { margin-top: 200px; margin-bottom: 100px }
     .main-quote h1 { font-size: 3.25rem; margin-bottom: 20px}
     .main-quote h2 { font-size: 1.75rem }
 }
