@@ -107,6 +107,7 @@ section {
     padding-left: 5vw;
     padding-right: 5vw;
     overflow-x: clip;
+    position: relative;
 }
 @media (min-width: 950px) {
     section {
@@ -128,6 +129,12 @@ section {
     align-items: center;
     /* White to transparent gradient top to bottom */
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+@media (max-width: 950px) {
+    #toolbar .startrow {
+        margin: auto;
+    }
 }
 
 #toolbar .middlerow {
@@ -194,9 +201,16 @@ section {
 }
 .platform-button button:hover {
     background: #a0c7be;
-    transform: translate(1px, 1px);
+    transform: translate(0px, 1px);
     box-shadow: 0px 0px black;
-    text-decoration: underline;
+}
+.platform-button.outline button {
+    background: white;
+    outline: 2px solid #C2EAE1
+}
+.platform-button.outline button:hover {
+    background: #E5E5E5;
+    outline: 2px solid #C2EAE1
 }
 
 @media (min-width: 1300px) {
@@ -207,7 +221,7 @@ section {
 
 /* Hero */
 #hero {
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -315,6 +329,7 @@ section {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform: translate(0px, 0px);
+    border: 1px solid #555;
     box-shadow: 2px 3px 0px 0px black;
 }
 .hero-button button:hover {
@@ -339,49 +354,33 @@ section {
     position: relative;
     height: auto;
     background: #C2EAE1 !important;
+    padding-top: 70px;
+    padding-bottom: 20px;
 }
 
 /*  Green background things */
-.background-green {
-    background: #C2EAE1 !important;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
 .background-swoop {
     position: absolute;
-    top: -150px;
+    bottom: -1px;
     left: 0px;
     z-index: 0;
-    width: 1920px;
-}
-.background-1 {
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    height: 450px;
-    width: 1920px;
-    background: #C2EAE1  !important;;
-    z-index: -1;
+    width: 100vw;
 }
 .background-swoop2 {
     position: absolute;
-    bottom: -220px;
+    top: -1px;
     left: 0px;
-    width: 1920px;
+    width: 100vw;
     /* transform scale x and y -1 */
     transform: scale(-1);
     z-index: -1;
 }
 .background-swoop-end {
     position: absolute;
-    top: -300px;
+    bottom: -1px;
     left: 0px;
     z-index: -1;
-    width: 1920px;
+    width: 100vw;
 }
 
 .background-2 {
@@ -392,23 +391,6 @@ section {
     width: 1920px;
     background: #C2EAE1 !important;;
     z-index: -1;
-}
-@media (min-width: 550px) {
-    .background-2 {
-        height: 130px;
-    }
-    .background-swoop {
-        top: -300px;
-    }
-    .background-1 {
-        height: 250px;
-    }
-    .background-swoop2 {
-        bottom: -300px;
-    }
-    .background-swoop-end {
-        top: -320px;
-    }
 }
 @media (min-width: 1930px) {
     .background-swoop, .background-1, .background-swoop2, .background-swoop-end {
@@ -443,11 +425,11 @@ section {
 /* White Examples */
 .white-example {
     position: relative;
-    margin-top: 250px;
+    padding-top: 250px;
 }
 @media (max-width: 1000px) {
     .white-example {
-        margin-top: 100px;
+        padding-top: 100px;
     }
 }
 
@@ -479,7 +461,7 @@ section {
 
 @media (max-width: 1300px) {
     .comingsoon-image {
-        margin-bottom: 30px;
+        display: none;
     }
 }
 
@@ -570,8 +552,12 @@ section {
     }
 }
 
-.cta-button button {
+.cta-button a {
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     background: #C2EAE1 !important;
     width: 200px;
     height: 50px;
@@ -586,7 +572,7 @@ section {
     border: 1px solid black;
     margin-left: 50px;
 }
-.cta-button button:hover {
+.cta-button a:hover {
     background: #a0c7be !important;
     transform: translate(1px, 2px);
     box-shadow: 0px 0px black;
@@ -608,13 +594,12 @@ section {
 
 /* The Team */
 #team {
-    margin-top: 150px;
     min-height: 80vh;
-    padding-top: 10vh;
+    padding-top: 300px;
 }
 @media (max-width: 1300px) {
     #team {
-        padding-top: 0vh;
+        padding-top: 150px;
     }
 }
 #team h3 {
@@ -632,7 +617,7 @@ section {
     align-items: center;
     text-align: center;
     margin: 20px;
-    width: 200px;
+    width: 140px;
     /* perspective: 150px; */
 }
 .profile-picture {
@@ -640,12 +625,16 @@ section {
     border-radius: 6px;
     box-shadow: 0px 2px 5px 0px #BABBBBA0;
     margin-bottom: 10px;
+    width: 140px;
+    height: 140px;
 }
+
+
 .team-card img {
     transform: rotateY(0deg);
     transform: rotateZ(0deg);
     transition: transform 0.5s;
-    cursor: crosshair;
+    cursor: grab;
 }
 .team-card:hover img {
     transform: rotateY(15deg);
@@ -662,6 +651,10 @@ section {
     }
     .team-card {
         width: 200px;
+    }
+    .profile-picture {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -688,8 +681,7 @@ section {
 /* Kleine lettertjes */
 #kleine-lettertjes {
     position: relative;
-    margin-top: 150px;
-    padding-top: 50px;
+    padding-top: 75px;
     display: flex;
     justify-content: center;
     background: #272D2D !important;;
