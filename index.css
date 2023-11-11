@@ -233,7 +233,7 @@ section {
 @media (max-width: 900px) {
     #hero {
         height: 50vh;
-        padding-top: 3vh;
+        padding-top: 2vh;
     }
 }
 .white-example .info {
