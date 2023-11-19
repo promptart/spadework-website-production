@@ -8,7 +8,7 @@ h1 {
     font-weight: 600;
     font-style: normal;
     letter-spacing: 0px;
-    font-size: 5rem;
+    font-size: 4.25rem;
     margin: 0px;
     text-align: center;
 }
@@ -221,7 +221,7 @@ section {
 
 /* Hero */
 #hero {
-    height: 65vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -594,8 +594,11 @@ section {
 
 /* The Team */
 #team {
-    min-height: 80vh;
+    min-height: 1200px;
     padding-top: 300px;
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 @media (max-width: 1300px) {
     #team {
@@ -610,6 +613,13 @@ section {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+}
+@media (min-width: 1300px) {
+    .team-list {
+        max-width: 1300px;
+    }
 }
 .team-card {
     display: flex;
@@ -626,7 +636,7 @@ section {
     box-shadow: 0px 2px 5px 0px #BABBBBA0;
     margin-bottom: 10px;
     width: 140px;
-    height: 140px;
+    height: auto;
 }
 
 
@@ -654,7 +664,7 @@ section {
     }
     .profile-picture {
         width: 200px;
-        height: 200px;
+        height: auto;
     }
 }
 
