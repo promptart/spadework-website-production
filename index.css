@@ -104,7 +104,7 @@ body {
     overflow-x: clip;
     /* background: blue; */
         background-size: 20px 20px;
-        background-image: linear-gradient(to right, rgba(128, 128, 128, .051) 1px, transparent 1px), linear-gradient(to bottom, rgba(128, 128, 128, .051) 1px, transparent 1px);
+        background-image: linear-gradient(to right, rgba(128, 128, 128, .011) 1px, transparent 1px), linear-gradient(to bottom, rgba(128, 128, 128, .011) 1px, transparent 1px);
 }
 section {
     width: 90vw;
@@ -225,7 +225,7 @@ section {
 
 /* Hero */
 #hero {
-    height: 40vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -357,7 +357,7 @@ section {
 .green-example {
     position: relative;
     height: auto;
-    background: #C2EAE1 !important;
+    background: #A4E2D3 !important;
     padding-top: 70px;
     padding-bottom: 20px;
 }
@@ -367,7 +367,7 @@ section {
     position: absolute;
     bottom: -1px;
     left: 0px;
-    z-index: -1;
+    z-index: 0;
     width: 100vw;
 }
 .background-swoop2 {
@@ -429,7 +429,7 @@ section {
 /* White Examples */
 .white-example {
     position: relative;
-    padding-top: 250px;
+    padding-top: 150px;
 }
 @media (max-width: 1000px) {
     .white-example {
@@ -440,9 +440,6 @@ section {
 .info {
     margin-top: 0px
 }
-@media (max-width: 1300px) {
-    margin-top: 100px
-}
 
 
 
@@ -451,12 +448,21 @@ section {
     max-width: 700px;
     height: auto;
     z-index: 5;
+    box-shadow: rgba(10, 0, 31, 0.1) 0px 1px 24px 4px;
+    border-radius: 5px;
 }
 @media (min-width: 1200px) {
     .gameplay {
         max-width: 600px;
     }
+    .gameplay.first {
+        max-width: 1040px;
+    }
 }
+.gameplay.first {
+    margin-top: -350px;
+}
+
 @media (min-width: 1800px) {
     .gameplay {
         max-width: 900px;
@@ -510,12 +516,11 @@ section {
     z-index: 2;
     position: relative;
     width: 1080px;
-    max-width: calc(100vw - 2em);
+    /* max-width: calc(100vw - 2em); */
     margin: 30px;
-}
-@media (max-width: 1300px) {
-    .info {
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -525,24 +530,17 @@ section {
     color: #222;
     margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    margin-right: 620px;
 }
 .tagline {
     font-weight: 600;
     color: black;
 }
 .description {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
-    width: 600px;
+    width: 820px;
     color: #222;
-    max-width: calc(100vw - 2em);
-}
-
-@media (min-width: 1300px) {
-    .description {
-        font-size: 2rem;
-    }
 }
 
 .cta-button {
@@ -565,7 +563,6 @@ section {
     background: #C2EAE1 !important;
     width: 200px;
     height: 50px;
-    margin-top: 60px;
     font-weight: 500;
     font-size: 1.2rem;
     border-radius: 10px;
@@ -574,7 +571,6 @@ section {
     transform: translate(0px, 0px);
     box-shadow: 1px 2px 0px 0px black;
     border: 1px solid black;
-    margin-left: 50px;
 }
 .cta-button a:hover {
     background: #a0c7be !important;
@@ -598,11 +594,11 @@ section {
 
 /* The Team */
 #team {
-    min-height: 1200px;
     padding-top: 300px;
     width: 100vw;
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 320px
 }
 @media (max-width: 1300px) {
     #team {
@@ -671,6 +667,35 @@ section {
         height: auto;
     }
 }
+
+.feature {
+    width: 500px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.feature .thumbnail {
+    width: 500px;
+    margin-bottom : 20px;
+}
+.feature .thumbnail img {
+    border-radius: 10px;
+    box-shadow: rgba(10, 0, 31, 0.1) 0px 1px 24px 4px;
+}
+.featuretitle {
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.featuredescription {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+.featuretagline {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
 
 
 /* FAQ */
