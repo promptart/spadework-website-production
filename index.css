@@ -19,7 +19,6 @@ h2 {
     text-align: center;
     margin: 0px;
     margin-top: 10px;
-    width: 1200px;
 }
 h2 u {
     font-size: 1.9rem;
@@ -28,7 +27,6 @@ h3 {
     font-weight: 100;
     font-style: normal;
     font-size: 1.5rem;
-    width: 800px;
     text-align: center;
     color: #333;
     text-align: center;
@@ -36,10 +34,10 @@ h3 {
 }
 @media (max-width: 900px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.25rem;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 2.25rem;
     }
 }
 p {
@@ -225,7 +223,11 @@ section {
 
 /* Hero */
 #hero {
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
     height: 70vh;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -236,15 +238,12 @@ section {
 }
 @media (max-width: 900px) {
     #hero {
-        height: 50vh;
-        padding-top: 2vh;
+        height: 40vh;
+        padding-top: 10vh;
     }
 }
 .white-example .info {
     background: radial-gradient(ellipse at top left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 70%);
-}
-@media (min-width: 1300px) {
-
 }
 
 /* Spadework definition */
@@ -257,64 +256,6 @@ section {
     background-size: 20px 8px; /* Size of the dashes */
     background-repeat: repeat-x;
     text-decoration: none;
-}
-
-.word-with-tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: help;
-}
-
-.word-with-tooltip .tooltip-image {
-    visibility: hidden;
-    height: 135px;
-    width: 360px;
-    bottom: -155px; /* Position the tooltip image */
-    margin-left: -270px; /* Use half of the tooltip width to center the tooltip*/
-    background-color: #C2EAE1;
-    padding: 5px;
-    z-index: 10;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    opacity: 0;
-    transition: opacity 0.3s;
-    box-shadow: 2px 3px 0px 0px black;
-}
-
-/* Driehoek pijltje */
-.word-with-tooltip .tooltip-image::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 270px;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #C2EAE1 transparent;
-}
-
-.word-with-tooltip:hover .tooltip-image,
-.word-with-tooltip.active .tooltip-image {
-    visibility: visible;
-    opacity: 1;
-}
-
-@media (min-width: 900px) {
-    .word-with-tooltip .tooltip-image {
-        height: 180px;
-        width: 480px;
-        bottom: -200px; /* Position the tooltip image */
-        margin-left: -20px; /* Use half of the tooltip width to center the tooltip*/
-    }
-    .word-with-tooltip .tooltip-image::after {
-        left: 20px;
-        margin-left: -5px;
-    }
-
 }
 
 .hero-button {
@@ -360,6 +301,9 @@ section {
     background: #A4E2D3 !important;
     padding-top: 70px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*  Green background things */
@@ -506,7 +450,7 @@ section {
     object-fit: contain;
 }
 .gameplay:hover, .logo:hover, .logo-bottom:hover {
-    scale: 1.01;
+    scale: 1.025;
 }
 
 
@@ -515,12 +459,12 @@ section {
     /* width: 700px; */
     z-index: 2;
     position: relative;
-    width: 1080px;
+    /* width: 1080px; */
     /* max-width: calc(100vw - 2em); */
     margin: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 
 .title {
@@ -530,7 +474,7 @@ section {
     color: #222;
     margin-bottom: 10px;
     display: flex;
-    margin-right: 620px;
+    justify-content: start;;
 }
 .tagline {
     font-weight: 600;
@@ -540,7 +484,13 @@ section {
     font-size: 2rem;
     font-weight: 300;
     width: 820px;
+    max-width: 90vw;
     color: #222;
+}
+@media (max-width: 1080px) {
+    .description {
+        font-size: 1.5rem;
+    }
 }
 
 .cta-button {
@@ -668,15 +618,34 @@ section {
     }
 }
 
+.rowdesktopcolumnmobile {
+    flex-direction: row;
+}
+@media (max-width: 1080px) {
+    .rowdesktopcolumnmobile {
+        flex-direction: column;
+    }
+}
 .feature {
     width: 500px;
+    max-width: 90vw;
+    height: 450px;
+    max-height: 95vw;
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
 .feature .thumbnail {
     width: 500px;
+    max-width: 90vw;
+    max-height: 85vw;
     margin-bottom : 20px;
+    transform: scale(1), rotateX(0deg);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.feature .thumbnail:hover {
+    transform: scale(1.01) rotateX(15deg);
 }
 .feature .thumbnail img {
     border-radius: 10px;
@@ -697,6 +666,14 @@ section {
 }
 
 
+.lastcta {
+    display: flex;
+}
+@media (max-width: 1080px) {
+    .lastcta {
+        display: none;
+    }
+}
 
 /* FAQ */
 #FAQ {
