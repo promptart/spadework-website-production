@@ -40,6 +40,18 @@ h3 {
         font-size: 2.25rem;
     }
 }
+
+@media (min-width: 1800px) {
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 100px;
+    }
+}
+
+
+
 p {
     font-size: 1rem;
     margin-top: 5px;
@@ -179,6 +191,11 @@ section {
     height: auto;
     display: block;
     cursor: crosshair;
+    transform: scale(1) rotateZ(0deg);
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.02) rotateZ(10deg);
 }
 .platform-button {
     display: none;
@@ -228,6 +245,7 @@ section {
     padding-right: 0px;
     height: 70vh;
     min-height: 500px;
+    max-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -340,26 +358,6 @@ section {
     background: #C2EAE1 !important;;
     z-index: -1;
 }
-@media (min-width: 1930px) {
-    .background-swoop, .background-1, .background-swoop2, .background-swoop-end {
-        width: 3840px;
-    }
-    .background-swoop {
-        top: -500px;
-    }
-    .background-1 {
-        height: 250px;
-    }
-    .background-swoop2 {
-        bottom: -500px;
-    }
-    .background-1, .background-2 {
-        height: 0px
-    }
-    .background-swoop-end {
-        top: -600px;
-    }
-}
 
 .intropic {
     width: 100vw;
@@ -408,8 +406,8 @@ section {
 }
 
 @media (min-width: 1800px) {
-    .gameplay {
-        max-width: 900px;
+    .gameplay.first {
+        max-width: 1500px;
     }
 }
 
@@ -465,6 +463,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: start;
+}
+@media (max-width: 500px) {
+    .info {
+        margin: -10px 30px 30px 30px;
+    }
 }
 
 .title {
