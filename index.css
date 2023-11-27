@@ -5,23 +5,26 @@ html {
 }
 /* Fonts */
 h1 {
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: 0px;
-    font-size: 3.55rem;
-    margin: 0px;
+    font-size: 3rem;
+    margin: 5px;
     text-align: center;
 }
 h2 {
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     margin: 0px;
     margin-top: 10px;
+    /* font-family: 'Inter'; */
 }
-h2 u {
-    font-size: 1.9rem;
+h1 b, h2 b {
+    /* background: #C2EAE1; */
+    /* padding: 0px 10px 0px 0px; */
+    /* font-weight: 700 */
 }
 h3 {
     font-weight: 100;
@@ -265,16 +268,18 @@ section {
 }
 
 /* Spadework definition */
-#hero u {
+/* #hero u {
     text-decoration: none;
-    /* font-size: 200;
-    text-decoration-style: 10px dashed #C2EAE1; */
     background-image: linear-gradient(to right, #C2EAE1 90%, rgba(255,255,255,0) 0%);
-    background-position: 0 1.05em; /* Position of the underline */
-    background-size: 20px 8px; /* Size of the dashes */
+    background-position: 0 1.05em;
+    background-size: 20px 8px;
     background-repeat: repeat-x;
     text-decoration: none;
-}
+} */
+
+/* #hero u {
+    text-decoration-style: 10px solid #C2EAE1;
+} */
 
 .hero-button {
     display: none;
