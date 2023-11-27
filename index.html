@@ -71,6 +71,8 @@
     <meta name="twitter:description" content="AI voor Recruiters">
     <meta name="twitter:image" content="https://i.imgur.com/6rr5Z3K.jpg">
 
+
+    
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
@@ -272,7 +274,7 @@
 
         <div style="margin-top: 20px; z-index: 5">
             <div class="cta-button">
-                <a class="btn btn-primary" type="button" href="https://beta.spadework.ai/client/account" target="_blank" style="width: 300px; background: #FCAE3C !important;">Probeer de Tools</a>
+                <a class="btn btn-primary" type="button" href="https://beta.spadework.ai/client/account" target="_blank" style="width: 300px; background: #83D9C7 !important;">Probeer de Tools</a>
             </div>
         </div>
     </div>
@@ -359,12 +361,50 @@
                 </div>
             </div>
         </div>
+
         <div class="title" style="font-weight: 100; font-size: 1rem; text-align: center; width: 100%; display: block; margin-top: 40px; margin-bottom: 0px;">
             Samenwerken? Mail naar: <a href="mailto:contact@spadework.nl" style="margin-left: 5px; text-decoration: underline; font-weight: 500">
                 contact@spadework.nl
             </a>
         </div>
-        
+
+
+        <!-- Email Form -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function() {
+                    // https://dashboard.emailjs.com/admin/account
+                    emailjs.init('Pm2Nk-5kuV_MKXrhS');
+                })();
+            </script>
+            <script type="text/javascript">
+                window.onload = function() {
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        // generate a five digit number for the contact_number variable
+                        this.contact_number.value = Math.random() * 100000 | 0;
+                        // these IDs from the previous steps
+                        emailjs.sendForm('contact_service', 'contact_form', this)
+                            .then(function() {
+                                console.log('Success!');
+                            }, function(error) {
+                                console.log('FAILED...', error);
+                            });
+                    });
+                }
+            </script>
+
+        <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <label>Name</label>
+            <input type="text" name="user_name">
+            <label>Email</label>
+            <input type="email" name="user_email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+
         <svg class="background-swoop-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 
             <path fill="#272D2D" fill-opacity="1"
