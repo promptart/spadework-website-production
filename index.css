@@ -408,7 +408,7 @@ section {
 
 @media (min-width: 1800px) {
     .gameplay.first {
-        max-width: 1500px;
+        max-width: 1200px;
     }
 }
 
@@ -737,4 +737,32 @@ section {
     /* use effects to make black image white */
     filter: invert(1);
     -webkit-filter: invert(1);
+}
+
+
+/* Contact form */
+#contact-form input {
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 10px;font-family: 'Instrument Sans', sans-serif;
+}
+#contact-form label {
+    text-align: start;
+    width: 310px;
+}
+
+#contact-form #message {
+    padding: 5px;
+    width: 300px;
+}
+#contact-form #submit {
+    width: 150px;
+    cursor: pointer;
+    /* background: #c2eae1; */
+}
+#contact-form textarea {
+    resize: none;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-family: 'Instrument Sans', sans-serif;
 }

@@ -334,7 +334,7 @@
             </div>
 
             <div class="team-card">
-                <img class="profile-picture" src="assets/img/lucas.jpeg">
+                <img class="profile-picture" src="assets/img/lucas3.jpeg">
                 <div class="profile-info">
                     <h5>Lucas Meijer</h5>
                     <p>Chief Data Officer</p>
@@ -348,7 +348,7 @@
             </div>
 
             <div class="team-card">
-                <img class="profile-picture" src="assets/img/liedewij.jpeg">
+                <img class="profile-picture" src="assets/img/liedewij2.jpeg">
                 <div class="profile-info">
                     <h5>Liedewij Loerakker</h5>
                     <p>Head of Strategy</p>
@@ -362,10 +362,37 @@
             </div>
         </div>
 
-        <div class="title" style="font-weight: 100; font-size: 1rem; text-align: center; width: 100%; display: block; margin-top: 40px; margin-bottom: 0px;">
-            Samenwerken? Mail naar: <a href="mailto:contact@spadework.nl" style="margin-left: 5px; text-decoration: underline; font-weight: 500">
-                contact@spadework.nl
-            </a>
+        <!-- <div class="title" style="font-weight: 100; font-size: 1rem; text-align: center; width: 100%; display: block; margin-top: 40px; margin-bottom: 0px;">
+            Benieuwd?
+        </div> -->
+
+        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <form id="contact-form" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px; margin-bottom: 40px; width: 100%; max-width: 700px;">
+                <input type="hidden" name="contact_number">
+            
+                <!-- <label>Naam</label> -->
+                <input id="name" type="text" name="user_name" placeholder="Voornaam Achternaam">
+            
+                <!-- <label>Email</label> -->
+                <input id="mail" type="email" name="user_email" placeholder="voorbeeld@email.com">
+            
+                <!-- <label>Bericht</label> -->
+                <textarea
+                    placeholder="Bericht"
+                    id="message"
+                    type="text"
+                    name="message"
+                    rows="3"
+                ></textarea>
+            
+                <input id="submit" type="submit" value="Verstuur">
+            </form>
+
+            <div>
+                of mail naar: <a href="mailto:contact@spadework.nl" style="margin-left: 5px; text-decoration: underline; font-weight: 500">
+                    contact@spadework.nl
+                </a>
+            </div>
         </div>
 
 
@@ -383,27 +410,32 @@
                         event.preventDefault();
                         // generate a five digit number for the contact_number variable
                         this.contact_number.value = Math.random() * 100000 | 0;
+                        var userEmail = document.getElementById('mail').value;
+                        var sendButton = event.target.querySelector('input[type="submit"]')
+
+                        sendButton.value = 'Aan het versturen...';
+                        sendButton.disabled = true;
+
                         // these IDs from the previous steps
-                        emailjs.sendForm('contact_service', 'contact_form', this)
-                            .then(function() {
-                                console.log('Success!');
-                            }, function(error) {
-                                console.log('FAILED...', error);
-                            });
+                        emailjs.sendForm('service_ewhb8n1', 'contact_form', this)
+                        .then(function() {
+                                console.log('Email successfully sent!');
+                                alert('Email verstuurd! We zullen een reactie sturen naar ' + userEmail + '.'); // Include the email in the alert
+                                
+                                document.getElementById('contact-form').reset(); // Clear the form
+
+                                sendButton.value = 'Verstuur'; // Reset button text
+                                sendButton.disabled = false; // Re-enable the button
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                            alert('Er ging wat mis bij het versturen van het contact formulier')
+                            sendButton.value = 'Verstuur'; // Reset button text
+                            sendButton.disabled = false; // Re-enable the button
+                        });
                     });
                 }
             </script>
 
-        <form id="contact-form">
-            <input type="hidden" name="contact_number">
-            <label>Name</label>
-            <input type="text" name="user_name">
-            <label>Email</label>
-            <input type="email" name="user_email">
-            <label>Message</label>
-            <textarea name="message"></textarea>
-            <input type="submit" value="Send">
-        </form>
 
         <svg class="background-swoop-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 
