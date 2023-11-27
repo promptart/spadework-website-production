@@ -205,7 +205,6 @@ section {
 }
 
 .platform-button button {
-    cursor: pointer;
     margin: 10px;
     background: #f7fafc00;
     border-radius: 50px;
@@ -445,7 +444,7 @@ section {
 }
 .gameplay, .logo, .logo-bottom {
     transition: scale 0.3s ease;
-    cursor: pointer;
+    /* cursor: pointer; */
     object-fit: contain;
 }
 .gameplay:hover, .logo:hover, .logo-bottom:hover {
@@ -646,7 +645,7 @@ section {
     margin-bottom : 20px;
     transform: scale(1), rotateX(0deg);
     transition: transform 0.3s ease;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .feature .thumbnail:hover {
     transform: scale(1.01) rotateX(15deg);
@@ -741,10 +740,20 @@ section {
 
 
 /* Contact form */
-#contact-form input {
-    padding: 5px;
-    width: 300px;
-    margin-bottom: 10px;font-family: 'Instrument Sans', sans-serif;
+#contact-form input, #contact-form textarea {
+    padding: 10px !important;
+    width: 290px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-family: 'Instrument Sans', sans-serif;
+    border-style: solid;
+    border: 1px solid #272D2D40;
+}
+#contact-form input:focus, #contact-form textarea:focus {
+    outline: none !important;
+    border: 1px solid #C2EAE1;
+    box-shadow: 0 0 10px #C2EAE150;
 }
 #contact-form label {
     text-align: start;
@@ -758,11 +767,16 @@ section {
 #contact-form #submit {
     width: 150px;
     cursor: pointer;
-    /* background: #c2eae1; */
+    background: #c2eae1;
+    border: 1px solid #272D2D40;
+    font-weight: 500;
+}
+#contact-form #submit:hover {
+    background: #a0c7be;
 }
 #contact-form textarea {
     resize: none;
     margin-bottom: 10px;
-    padding: 20px;
-    font-family: 'Instrument Sans', sans-serif;
+    box-sizing: border-box;
+    width: 310px !important;
 }
